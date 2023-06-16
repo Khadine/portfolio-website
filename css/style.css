@@ -1,0 +1,109 @@
+/*
+colors used::
+primary color: 
+    (black) #0c0c0f; 
+    (cream) #fffce9
+secondary color: 
+    (orange) #bd5608
+text color: #000000
+header option 1: font-family: 'Fira Sans', sans-serif;ExtraLight 200; ExtraLight 200 Italic; Light 300; Light 300 Italic; Regular 400; Regular 400 Italic; Medium 500; Medium 500 Italic; SemiBold 600; SemiBold 600 Italic; Bold 700; Bold 700 Italic; ExtraBold 800; ExtraBold 800 Italic
+header option 2 (logo name): font-family: 'Montserrat', sans-serif;Light 300; Light 300 Italic; Regular 400; Regular 400 Italic; Medium 500; Medium 500 Italic; SemiBold 600; SemiBold 600 Italic; Bold 700; Bold 700 Italic
+sub-header: font-family: 'Mulish', sans-serif;Light 300; Light 300 Italic; Regular 400; Regular 400 Italic; Medium 500; Medium 500 Italic; SemiBold 600; SemiBold 600 Italic; Bold 700; Bold 700 Italic
+body: font-family: 'Roboto', sans-serif; Thin 100; Thin 100 Italic; Light 300; Regular 400; Regular 400 Italic; Medium 500; Bold 700; Black 900; Black 900 Italic
+*/
+
+body {
+    background-color: #fffef5;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.6;
+    color: black
+}
+
+h1, h2, h3, h4 {
+    line-height: 1.4;
+}
+
+h1 {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+  
+h2 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 2.125em;
+    font-weight: 600;
+}
+  
+h3 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.75em;
+    font-weight: 400;
+}
+
+h4 {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.25em;
+    font-weight: 400;
+}
+
+/*to make sure images scale correctly*/
+img {
+    width: 100%;
+}
+
+/*hyperlink stylings*/
+a {
+    color: #0c0c0f;
+    text-decoration: none; /* No underlining */
+}
+
+a:visited { /* visited link */
+    color: #69089d;
+}
+
+a:hover, a:focus {
+  color: #090561;
+  text-decoration: underline;
+}
+
+a:active { /* selected link */
+    color: #108312;
+}
+
+.button { /*always place at bottom of style sheet so not overwritten*/
+    display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+    background-color: #F18B41;
+    color: #ffffff; /* needed to override the default link color */
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 13px;
+    border-bottom: 2px solid #B53013; /* width of the border, type, color */
+    transition: 0.2s opacity;
+}
+.button:hover {
+    opacity: 0.7; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+    color: #2c0901;
+}
+.button:active {
+    opacity: 0.7; /* Reduces the opacity of the button to 80% */
+    text-decoration: none;
+    color: #2c0901;
+}
+.button.contact {
+    background-color: transparent;
+    color: #ff7f50;
+    text-transform: uppercase;
+    border: 2px solid #ff7f50;
+}
+.button.contact:hover {
+    background-color: #ff7f50;
+    color: #ffffff;
+}
+.button.contact:active {
+    background-color: #ff7f50;
+    color: #ffffff;
+}
