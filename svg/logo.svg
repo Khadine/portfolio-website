@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="558" height="558" viewBox="0 0 558 558">
+  <defs>
+    <clipPath id="clip-kc-logo_5">
+      <rect width="558" height="558"/>
+    </clipPath>
+  </defs>
+  <g id="kc-logo_5" data-name="kc-logo – 5" clip-path="url(#clip-kc-logo_5)">
+    <rect id="Rectangle_2" data-name="Rectangle 2" width="558" height="558" rx="73"/>
+    <path id="Union_6" data-name="Union 6" d="M180.265,292.733,130.084,361.9V399.42H0V0H130.084l-.039,218.439,56.869-90.683v.086c31.3-57.048,93.149-93.237,168.2-93.237,57.859,0,107.6,20.775,140.588,59.283,0,0,15.382,23.194-3.83,40.027s-38.8,0-38.8,0c-25.885-27.868-57.861-41.548-94.911-41.548-73.593,0-126.885,51.683-126.885,124.645s53.292,124.645,126.885,124.645c37.049,0,69.025-13.68,94.911-42.055,0,0,20.818-17.9,38.8,0s3.83,40.534,3.83,40.534c-32.99,38.508-82.729,59.283-141.1,59.283C274.19,399.42,208.8,357.484,180.265,292.733Z" transform="translate(28.236 79.29)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-miterlimit="10" stroke-width="1"/>
+  </g>
+</svg>
