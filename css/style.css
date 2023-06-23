@@ -92,7 +92,7 @@ a:active { /* selected link */
     padding: 10px;
     border-radius: 13px;
     /*border-bottom: 2px solid #B53013; /* width of the border, type, color */
-    transition: 0.2s opacity;
+    transition: 0.4s opacity;
 }
 
 /* .button:visited {
@@ -104,6 +104,7 @@ a:active { /* selected link */
     text-decoration: none;
     background-color: #0c0c0f;
     color: #ffffff;
+    opacity: 0.9;
 }
 
 .button:active {
@@ -150,8 +151,8 @@ header { /*css3studio.com shadow generator*/
 }
 
 .logo { /* since logo is a svg file, needed to enter code into svg not <a>*/
-    max-width: 150px;
-    max-height: 150px;
+    max-width: 60px;
+    max-height: 60px;
 }
 nav {
     display: inline-block;
@@ -177,7 +178,7 @@ nav > ul > li > a:visited {
 }
 
 main {
-    padding-top: 235.19px;
+    padding-top: 145px;
     padding-bottom: 50px;
 }
 .container {
@@ -344,12 +345,14 @@ footer {
     padding-left: 8px; 
 }
 
-#linkedin, #behance, #github, #twitter {
+.social-media {
     display: inline-block;
     
     width: 50px;
     height: 50px;
 }
+
+
 
 /* float-text #linkedin, #behance, #github, #twitter {
     float: left;
@@ -357,4 +360,202 @@ footer {
 
 .copyright {
     text-align: center;
+}
+
+.cf-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@keyframes color-change {
+    0% {fill: #fddb68;}
+    50% {fill: #efc848;}
+    100% {fill: #fddb68;}
+}
+
+.ink-path, .ink-down-bag {
+    animation: 4s color-change infinite alternate linear;
+
+}
+
+@keyframes brayer-move {
+    from {transform: translate(0,466px);}
+    to {transform: translate(30px,466px);}
+}
+
+
+.brayer {
+    animation: 1s brayer-move infinite alternate linear;
+}
+
+/* @keyframes shadow-bounce-1 {
+    from {transform: translate(250px,930px);}
+    to {transform: translate(250px, 955px);}
+} */
+
+/* @keyframes phone-bounce-1 {
+    from {transform: translate(178px, 98px);}
+    to {transform: translate(178, 113px);}
+} */
+
+.phone1 {
+    animation: 4s phone-bounce-1 infinite alternate ease-in-out;
+}
+
+@keyframes color-change-1 {
+    0% {fill: #edc655;}
+    50% {fill: #fcffad;}
+    100% {fill: #f76414;}
+}
+
+.sun {
+    animation: 4s color-change-1 infinite alternate linear;
+}
+
+@keyframes cloud-move {
+    from {transform: translate(0,50px);}
+    to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {transform: translate(446px,48px);}
+    to {transform: translate(100px,48px);}
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+      }
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+      }
+    main {
+        padding-top: 100px;
+    }
+    body {
+        font-size: 18px;
+    }
+    #hero > .container > h1  { /* tried to have it just be #hero but it wouldnt affect the h1 just the p*/
+        text-align: center;
+    }
+    #hero > .container > p  { /* tried to have it just be #hero but it wouldnt affect the h1 just the p*/
+        text-align: center;
+    }
+    #hero span { 
+        display: block;
+        text-align: center;
+    }
+    .col-md-6 {
+        width: 50%;
+    }
+    [class*="col-"] {
+        float: left;
+        padding: 10px;
+    }
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    #work > .container > h2 {
+        text-align: center;
+    }
+    [class*="col-"] > h3 {
+        margin: 0 auto 0 auto;
+    }
+    #skills > .row  {
+        margin-top: 0;
+    }
+    img {
+        max-width: 500px;
+        margin: auto;
+    }
+    /* img {
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    } */
+    footer {
+        text-align: center;
+    }
+    #about > p {
+        font-size: 18px;
+    }
+    
+}
+
+/* ==============================
+Medium devices (768px and larger)
+================================= */
+/*@media only screen and (min-width: 768px) {
+
+}*/ 
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+    .col-lg-7 {
+        width: 58.33%;
+    }
+    .col-lg-5 {
+        width: 41.66%;
+    }
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+    #about {
+        padding-top: 50px;
+    }
+    #about > .button{
+        margin-left: 130px;
+    }
+    #skills > h2 {
+        margin-left: 100px;
+        margin-bottom: 15px;
+    }
+    [class*="col-"] > h3{
+        margin-left: 110px;
+    
+    }
+    [class*="col-"] > ul{
+        margin-left: 125px;
+    }
+    footer {
+        text-align: center;
+    }
+    /* .social-media {
+        display: flex;
+        justify-content: center;
+        
+    } */
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+
 }
