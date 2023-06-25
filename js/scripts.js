@@ -1,0 +1,1 @@
+console.log("Hello and welcome to my Portfolio Site! Happy to have you here, take a moment to look around and if youre interested in getting in touch, feel free to email me!")

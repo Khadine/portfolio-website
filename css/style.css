@@ -305,6 +305,9 @@ main {
     /* margin: 50px 0; */
     padding-top: 50px;
 }
+.center {
+    text-align: center;
+}
 #about > .button {
     margin: 25px 0;
 }
@@ -326,6 +329,7 @@ footer {
     display: block;
     padding: 20px 0;
     width: 100%;
+    text-align: center;
 }
 .cell {
     color: #ffffff;
@@ -340,7 +344,6 @@ footer {
 #social-media > li {
     display: inline-block;
     max-width: 100%;
-    width: 30%;
     padding-right: 8px;
     padding-left: 8px; 
 }
@@ -482,7 +485,7 @@ Medium devices (640px and larger)
     #skills > .row  {
         margin-top: 0;
     }
-    img {
+    #profile-pic > img {
         max-width: 500px;
         margin: auto;
     }
@@ -491,9 +494,6 @@ Medium devices (640px and larger)
         margin-left: auto;
         margin-right: auto;
     } */
-    footer {
-        text-align: center;
-    }
     #about > p {
         font-size: 18px;
     }
@@ -542,9 +542,6 @@ Large devices (1024px or larger)
     }
     [class*="col-"] > ul{
         margin-left: 125px;
-    }
-    footer {
-        text-align: center;
     }
     /* .social-media {
         display: flex;
