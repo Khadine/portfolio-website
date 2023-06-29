@@ -1,1 +1,9 @@
-console.log("Hello and welcome to my Portfolio Site! Happy to have you here, take a moment to look around and if youre interested in getting in touch, feel free to email me!")
+function menuToggle() {
+    var x = document.getElementById('myNavtoggle');
+    if (x.className === 'navtoggle') {
+        x.className += ' responsive';
+    } else {
+        x.className = 'navtoggle';
+    }
+    
+}
