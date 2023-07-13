@@ -226,17 +226,37 @@ main {
     padding: 0 15px;
 }
 #hero {
-    background-color:#0c0c0f;
+    background-color:#fffef6;
     color: #ffffff;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    margin-bottom: 60px;
+}
+
+#hero  p  a {
+    color: #ffffff;
+}
+#hero  p  a:visited {
+    color: #ffffff;
+}
+#hero  p  a:hover, a:focus {
+    color: #ffa749;
 }
 
 #hero h1 { /*option 1 to help with added white space (marging and padding)*/
     text-align: left; /* centers text*/
-    font-size: 2.3em;
+    font-size: 2.6em;
+    margin-bottom: 10px;
     /* margin: 0; /*this removed the extra space that the normalizer put into the styling*/
    /* padding: 0.67em 0; /*by moving this from the normalizer margin to padding, the added space is included into the container and not on the outside*/  
 }
 
+#hero h2 {
+    text-align: left;
+    margin-top: 10px;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
 /* #hero { (option 2 to help with added white space from the normalizer)
     background-color: #ffe4c4;
     padding: 20px 0;
@@ -244,7 +264,7 @@ main {
 
 #hero { /*option 3 to help with added white space from the normalizer, change from block to inline-block- use this option */
     background-color: #0c0c0f;
-    padding: 20px 0;
+    padding: 60px 0;
     display: inline-block;
     width: 100%; /*in this option must add 100% width so that it expands when viewpoint enlarges)*/
 }
@@ -553,8 +573,8 @@ footer {
       
 
       /* NORMAL */
-      --fc-border-color: #ECEFF9;
-      --fc-normal-text-color: #0E0B3D;
+      --fc-border-color: #fec797;
+      --fc-normal-text-color: #0c0c0f;
       --fc-normal-placeholder-color: #B3B8D0;
 
       /* PRIMARY COLOR | HSL FORMAT*/
@@ -732,10 +752,17 @@ Medium devices (640px and larger)
         font-size: 18px;
     }
     #hero > .container > h1  { /* tried to have it just be #hero but it wouldnt affect the h1 just the p*/
-        text-align: center;
+        text-align: left;
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+    #hero > .container > h2  { /* tried to have it just be #hero but it wouldnt affect the h1 just the p*/
+        text-align: left;
+        margin-left: 120px;
+        margin-right: 120px;
     }
     #hero > .container > p  { /* tried to have it just be #hero but it wouldnt affect the h1 just the p*/
-        text-align: center;
+        text-align: left;
         /* padding: 20px; */
         margin-left: 120px;
         margin-right: 120px;
@@ -756,7 +783,7 @@ Medium devices (640px and larger)
         clear: both;
         display: table;
     }
-    #work > .container > h1 {
+    #work > .container > h1, h3 {
         text-align: center;
     }
     #work > .container > h2 {
@@ -866,6 +893,13 @@ Large devices (1024px or larger)
 
     .mycontact{
         padding: 20px;
+    }
+
+    .current{
+        border-bottom: 2px solid #ffffff;
+        background-color: #0c0c0f;
+        border-top: 2px solid #ffffff;
+        padding: 4px 20px;
     }
 }
 
