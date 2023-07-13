@@ -555,7 +555,15 @@ footer {
 .txt{
     padding-bottom: 50px;
 }
+
+.current{
+    border-bottom: 2px solid #ffffff;
+    background-color: #0c0c0f;
+    border-top: 2px solid #ffffff;
+    padding: 4px 20px;
+}
 /* contact form css */
+
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 
